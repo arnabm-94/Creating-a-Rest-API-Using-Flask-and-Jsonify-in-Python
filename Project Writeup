@@ -1,0 +1,17 @@
+Problem Statement : We want to create a REST API which will give a Boolean Response on being given a number based on it being Armstrong Number or Not. 
+Armstrong Number : Armstrong number is the number in any given number base, which forms the total of the same number, when each of its digits is raised to the power of the number of digits in the number.
+step 1 : Create a main.py file 
+step 2 : Copy the code for flask minimal app from flask pallet and paste it in main.py file . Make sure the code is taken from the pallet version of which the flask is installed in the system. 
+step 3: we need to write the app.run and debug = true to run it on the server 
+step 4 : Go to the terminal and run the code for the main.py file 
+step 5: Put the code for armstrong number in main.py 
+step 6 : Go to "fake json api" on Google and visit the website called Json placeholder where we get fake api which we can use . We can open those fake api's by copying the api . Go to the api using right click in a new tab and we will get to see the json response.  
+step 7 : To view the JSON data nicely we can use any extension of JSON viewer on google chrome. It formats the JSON data and displays us. The integers are displayed in Blue , the stings are displayed in Green, the booleans are displayed in Red.
+step 8 : Take another app.route and after the '/' we put armstrong , then put '/' and put <int:n>
+step 9: Now on going the server if we put /armstrong followed by /number it will check whether it is an armstrong number or not and give boolean response. 
+step 10: Now replace the boolean response of True and False with a dictionary named result
+step 11: The result dictionary will have the input number 'n', the boolean value for it being an armstrong number and there can be many such arguments which we return. 
+step 12 : In main.py we return jasonify(result)
+Note : The value that we give to jasonify, the jasonify makes sure that it returns a valid Json
+step 13 : Now when we change the number on the server it gives us the number as the response with the boolean value and other arguments related to it in the result distionary.
+
